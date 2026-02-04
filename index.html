@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nadia Aura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="running"><span data-i18n="header.running">SELAMAT DATANG - SELAMAT SUKSES <i>(for better viewing experience, use desktop browser)</i></span></div>
+        </div>
+        <nav class="site-nav">
+            <div class="nav-left">
+                <img src="logo.png" alt="Logo" class="nav-logo">
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <ul class="nav-list">
+                <li><a href="index.html" class="active" data-i18n="nav.home">★ beranda</a></li>
+                <li><a href="karya.html" data-i18n="nav.work">★ karya</a></li>
+                <li><a href="tentang.html" data-i18n="nav.about">★ tentang saya</a></li>
+            </ul>
+            <button class="translate-btn" aria-pressed="false" data-lang="id" aria-label="Switch language">EN</button>
+        </nav>
+    </header>
+
+    <main class="main-wrapper">
+        <div class="container">
+            <section class="content-left">
+                <h1><i>Hello!</i></h1>
+                <div class="text-box">
+                    <p data-i18n="intro.paragraph">
+                        Saya <strong><u>Farrel Haikal</u></strong>, seorang Graphic Designer yang fokus pada 
+                        <strong>Brand Identity, Ilustrasi, dan UI Design</strong>. 
+                        Saya membantu brand menciptakan visual yang berkarakter dan berkesan.
+                    </p>
+            </section>
+
+            <section class="content-right">
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <img src="karya1.jpg" alt="Highlight 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="karya2.jpg" alt="Highlight 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="karya3.png" alt="Highlight 3">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="karya4.jpg" alt="Highlight 4">
+                    </div>
+
+                    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer-full">
+        <div class="typing footer-name"><span>Farrel Haikal</span></div>
+        <div class="social-links">
+            <span>instagram <strong>@dooms667</strong></span>   |  
+            <span>email <strong>farrelpraikal@gmail.com</strong></span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
